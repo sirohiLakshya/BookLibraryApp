@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Run Docker container based on the built image
-                    def dockerContainer = docker.image('my-spring-boot-app').run('-p 4050:4050', '--name my-libapp-container-latest')
+                    def dockerContainer = docker.image('my-spring-boot-app').run('-p 4050:4050')
                 }
             }
         }
